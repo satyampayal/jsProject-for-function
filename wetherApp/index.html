@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wether App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0ab601c0ac.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Wether App</h1>
+            <form>
+                <input type="text" placeholder="serch by city name" class="searchBox">
+                <button type="submit" class="searchBtn">search</button>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <div class="weather-container">
+            <img src="./img/cloud.jpeg" alt="weather-Img" class="weather-image">
+
+            <div class="weather-box">
+                <p class="temperature">0<sup>°C</sup></p>
+                <p class="description">Light rain</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+</body>
+<script src="wether.js"></script>
+
+</html>

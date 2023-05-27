@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #2b1d0f;
+    color: #fff;
+}
+
+header nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #212121;
+    padding: 20px;
+    z-index: 2;
+
+}
+
+header nav h1{
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+header nav form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav form input[type="text"]{
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+header nav form input[type="text"],
+form button[type="submit"]{
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+header nav form button[type="submit"]{
+    background-color: #f44336;
+    color: #fff;
+    transition: background-color 0.2s ease-in-out;
+
+
+}
+
+header nav form button[type="submit"]:hover{
+    background-color: #ff5c5c;
+}
+
+/* Weather container */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #f44336 ;
+    z-index: 2;
+    color: #000;
+    margin-block:20px ;
+}
+.weather-container img{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius:50%;
+    border: 1px solid #2f2f2f;
+    object-fit: cover;
+
+
+}
+.weather-box{
+   margin-block: 20px;
+   text-align: center; 
+}
+.weather-box .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+
+}
+.weather-box .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+.weather-box .description{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 30px;
+}
+
+ .humidity,
+ .wind
+{   
+    display: flex;
+    align-items: center;
+    
+}
+.humidity{
+    margin-left: 40px;
+    margin-right: 20px;
+}
+.wind{
+    margin-right: 40px;
+}
+
+.weather-details i{
+    font-size: 36px;
+}
+
+.weather-details .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
+/* responsive  */
+@media screen and (max-width:600px) {
+    header nav{
+        flex-direction:column
+    }
+    header nav form{
+        width: 80%;
+    }
+    
+}
